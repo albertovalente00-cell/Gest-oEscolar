@@ -1,0 +1,337 @@
+.login-form{
+    -fx-background-color: linear-gradient(to bottom right, #252d50, #324f6b);
+}
+.card-form{
+    -fx-background-color:#386996;
+    -fx-background-radius: 15px;
+}
+
+.close{
+   -fx-background-color:transparent;
+   -fx-cursor: hand;
+   -fx-text-fill:white;
+}
+.close:hover{
+   -fx-background-color: #f13f57;
+}
+.minimize{
+    -fx-background-color: transparent;
+    -fx-cursor: hand;
+    -fx-text-fill:white;
+
+}
+.minimize:hover{
+    -fx-background-color: #50569e;
+    -fx-text-fill: white;
+}
+.minimize:pressed{
+    -fx-background-color: #3a3f7a;
+}
+.login-btn{
+  -fx-background-color: #45b7d5;
+  -fx-text-fill: white;
+  -fx-font-weight: bold;
+  -fx-background-radius: 15px;
+  -fx-cursor:hand;
+}
+.login-btn:hover{
+   -fx-background-color: #3a9cb5;
+}
+
+.textfield{
+
+    -fx-background-color: transparent;
+    -fx-text-inner-color: #fff;
+    -fx-border-color: #fff;
+    -fx-border-width: 0px 0px .2px 0px;
+    -fx-font-size: 15px;
+    -fx-alignment: CENTER;
+    -fx-prompt-text-fill: #aaaaaa;
+}
+.textfield:focused{
+    -fx-border-color: #00d4ff;
+    -fx-border-width: 0px 0px 2px 0px;
+}
+
+/* Mensegem de feedback do login */
+.label-mensagem{
+  -fx-font-size: 13px;
+  -fx-font-weight: bold;
+  -fx-alignment: CENTER;
+  -fx-text-alignment: center;
+  -fx-padding: 8px 12px;
+  -fx-background-radius: 8px;
+  -fx-background-color: rgba(255, 255 ,255, 0.2);
+  -fx-text-fill: #00ff88;
+  -fx-border-color: #00ff88;
+  -fx-border-width: 0px 0px 2px 0px;
+  -fx-border-radius: 8px;
+
+}
+.label-mensagem-sucesso{
+ -fx-font-size: 13px;
+ -fx-font-weight: bold;
+ -fx-alignment: CENTER;
+ -fx-text-alignment: center;
+ -fx-padding: 8px 12px;
+ -fx-background-radius: 8px;
+ -fx-background-color: rgba(255,255, 255, 0.2);
+ -fx-text-fill: #00ff8c;
+ -fx-border-color:#00e676;
+ -fx-border-width: 0px 0px 0px 3px;
+ -fx-border-radius: 8px;
+
+}
+.combo-box{
+    -fx-background-color: transparent;
+    -fx-text-inner-color: #fff;
+    -fx-border-color: #fff;
+    -fx-border-width: 0px 0px 2px 0px;
+    -fx-font-size: 15px;
+    -fx-prompt-text-fill: #aaaaaa;
+}
+.combo-box:focused{
+    -fx-border-color: #08d4ff;
+    -fx-border-width: 0px 0px 2px 0px;
+}
+
+.combo-box .list-cell{
+    -fx-background-color: transparent;
+    -fx-text-fill: #fff;
+}
+.combo-box .arrow-button {
+    -fx-background-color: transparent;
+}
+.combo-box .arrow{
+  -fx-background-color: white;
+}
+
+/* Fundo da lista que abre */
+
+.combo-box-popup .list-view {
+    -fx-background-color: #0a4a7a;
+}
+
+.combo-box-poup .list-view .list-cell{
+  -fx-text-fill: white;
+  -fx-background-color: #0a4a7a;
+}
+
+.combo-box-poup .list-view .list-cell:hover {
+   -fx-background-color: #08d4ff;
+}
+// Link Voltar ao Login
+
+.lbl-voltar{
+   -fx-cursor: hand;
+   -fx-text-fill: white;
+   -fx-underline: true;
+   -fx-font-size: 14px;
+}
+.lbl-voltar:hover{
+   -fx-text-fill: #ffeb3b; /* fica amarelo quando passa o mouse */
+}
+// Botões do menu lateral - transparentes
+.btn-menu{
+  -fx-background-color: transparent;
+  -fx-text-fill:white;
+  -fx-font-size: 14px;
+  -fx-alignment: CENTER_LEFT;
+  -fx-padding: 0 0 0 20;
+  -fx-cursor: hand;
+  -fx-background-radius: 8;
+  -fx-border-radius: 8;
+
+}
+.btn-menu:hover{
+   -fx-background-color: rgba(255,255,255, 0.15);
+}
+
+.btn-menu:pressed{
+  -fx-background-color: rgba(255, 255,255, 0.25);
+
+}
+.search-box{
+    -fx-background-color:EDF2F7;
+    -fx-background-radius:8;
+    -fx-border-color:E2E8F0;
+    -fx-border-radius:8;
+    -fx-padding: 0 12 0 15;
+}
+
+.search-field{
+    -fx-background-color:transparent;
+    -fx-border-color:transparent;
+    -fx-prompt-text-fill: #A0AEC0;
+    -fx-font-size: 13px;
+}
+
+.search-icon{
+  -fx-text-fill: #718096;
+  -fx-font-size: 16px;
+}
+
+/*== Tela Alunos e Cadastro */
+/* Fundo geral da tela */
+.fundo-geral{
+   -fx-background-color: #F5F7FB;
+}
+/* Menu azul esquerdo*/
+.sidebar{
+ -fx-background-color: #1A4F7A;
+ -fx-background-radius: 0;
+ -fx-padding: 0;
+ -fx-pref-weight: 220;
+}
+
+.sidebar-titulo{
+  -fx-text-fill: #FFFFFF;
+  -fx-font-weight: bold;
+  -fx-font-size: 16px;
+  -fx-padding: 20 0 0 15;
+}
+.sidebar-sub{
+  -fx-text-fill: #B8D4E8;
+  -fx-font-size: 11px;
+  -fx-padding: 0 0 10 15;
+}
+
+-btn-menu{
+  -fx-background-color: transparent;
+  -fx-text-fill: #D0E6F5;
+  -fx-background-radius: 0;
+  -fx-alignment:CENTER_LEFT;
+  -fx-pref-height: 45;
+  -fx-padding: 0 0 0 15;
+  -fx-font-size: 16px;
+}
+-btn-menu-ativo{
+  -fx-background-color: #2A6FA1;
+  -fx-text-fill: white;
+  -fx-background-radius: 0;
+  -fx-alignment: CENTER_LEFT;
+  -fx-pref-height: 45;
+  -fx-padding: 0 0 0 15;
+  -fx-font-weight: bold;
+  -fx-border-color: white;
+  -fx-border-width: 0 0 0 3;
+}
+
+/* Cartao branco principal da fota*/
+.card-branco{
+  -fx-background-color:white;
+  -fx-background-radius: 20;
+  -fx-padding: 25;
+  -fx-effect: dropshadow(tree-pass-box, rgba(0,0,0,0.08), 15,0,0.3);
+}
+
+.titulo-principal{
+  -fx-font-size: 20px;
+  -fx-font-weight: bold;
+  -fx-text-fill: #0A1A33;
+}
+
+.subtitulo{
+  -fx-font- size: 12px;
+  -fx-text-fill: #6B7280;
+}
+
+/* Inputs da imagem da cadastra */
+.input-field{
+  -fx-background-color: white;
+  -fx-background-radius: 8;
+  -fx-border-color: #CBD5E0;
+  -fx-border-radius: 8;
+  -fx-pref-height: 38;
+}
+
+.label-campo{
+   -fx-font-weight: bold;
+   -fx-font-size: 12px;
+   -fx-text-fill: #1A202C;
+
+}
+
+.box-foto{
+  -fx-bord-color: #A0AEC0;
+  -fx-border-style: dashed;
+  -fx-border-width: 1.5;
+  -fx-border-radius: 12;
+  -fx-background-radius: 12;
+  -fx-background-color: #F9FAFB;
+  -fx-padding: 20;
+  -fx-alignment: CENTER;
+
+}
+
+/* Botões de baixo da imagem*/
+.btn-cancelar{
+  -fx-background-color: #CBD5E0;
+  -fx-text-fill: #2D3748;
+  -fx-background-radius: 8;
+  -fx-pref-width: 120;
+  -fx-pref-height: 40;
+  -fx-font-weight: bold;
+}
+
+.btn.salvar{
+  -fx-background-color: #0A1A33;
+  -fx-text-fill: white;
+  -fx-background-radius: 8;
+  -fx-pref-width: 140;
+  -fx-height: 40;
+  -fx-font-weight: bold;
+}
+
+.btn-novo-aluno{
+  -fx-background-color: #2B6CB0;
+  -fx-text-fill: white;
+  -fx-background-radius: 8;
+  -fx-font-weight: bold;
+  -fx-pref-height: 35;
+}
+
+/* Tabela */
+
+.table-view{
+  -fx-background-radius: 8;
+  -fx-border-radius: 8;
+}
+/* Tabela Bonita*/
+.table-view{
+  -fx-background-color : white;
+  -fx-background-radius: 10;
+  -fx-border-radius: 10;
+  -fx-border-color: #e2e8f0;
+  -fx-effect: dropshadow(gausian, rgba(0,0,0,0.05), 10, 0, 0.2);
+}
+.table .column-header-background{
+  -fx-background-color: #f1f5f9;
+  -fx-background-radius: 10 10 0 0;
+}
+.table-view .column-header{
+    -fx-background-color: transparent;
+    -fx-size: 40px;
+    -fx-font-weight: bold;
+    -fx-font-size: 12px;
+    -fx-text-fill: #475569;
+
+}
+.table-row-cell{
+  -fx-cell-size: 38px;
+  -fx-border-color: #f1f5f9;
+}
+.table-row-cell: selected{
+  -fx-background-color: #dbeafe;
+}
+.button-registrar{
+  -fx-background-color: #0D6EFD;
+  -fx-text-fill: white;
+  -fx-font-weight: bold;
+  -fx-background-radius: 8;
+  -fx-padding: 10 20;
+}
+.button-registrar:hover{
+   -fx-background-color: #0B5ED7;
+
+}

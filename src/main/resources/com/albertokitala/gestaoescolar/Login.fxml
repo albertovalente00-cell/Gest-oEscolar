@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+<?import org.kordamp.ikonli.javafx.FontIcon?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="520.0" prefWidth="691.0" styleClass="login-form" stylesheets="@designLogin.css" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.albertokitala.gestaoescolar.controller.LoginController">
+   <children>
+      <StackPane layoutX="131.3333282470703" layoutY="82.0" AnchorPane.bottomAnchor="60.0" AnchorPane.leftAnchor="120.0" AnchorPane.rightAnchor="120.0" AnchorPane.topAnchor="60.0">
+         <children>
+            <AnchorPane maxHeight="435.0" maxWidth="474.0" prefHeight="435.0" prefWidth="451.0" styleClass="card-form" stylesheets="@designLogin.css">
+               <children>
+                  <Label layoutX="186.0" layoutY="97.0" prefHeight="32.0" prefWidth="79.0" styleClass="card-form" stylesheets="@designLogin.css" text="Login" textFill="#d9cfcf">
+                     <font>
+                        <Font name="Berlin Sans FB Demi Bold" size="30.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="txtNomeUtilizador" layoutX="144.0" layoutY="140.0" prefHeight="25.0" prefWidth="234.0" promptText="Digite o nome do utilizador" styleClass="textfield" stylesheets="@designLogin.css" />
+                  <PasswordField fx:id="txtSenhaUtilizador" layoutX="140.0" layoutY="175.0" prefHeight="25.0" prefWidth="241.0" promptText="Digite a sua senha" styleClass="textfield" stylesheets="@designLogin.css" />
+                  <Button fx:id="btnLogin" layoutX="171.0" layoutY="218.0" mnemonicParsing="false" onAction="#onActionLoginClick" prefHeight="35.0" prefWidth="138.0" styleClass="login-btn" stylesheets="@designLogin.css" text="LOGIN" />
+                  <FontIcon iconColor="#ebe1e1" iconLiteral="fa-users" iconSize="80" layoutX="183.0" layoutY="83.0" wrappingWidth="71.3333740234375" />
+                  <Label layoutX="68.0" layoutY="146.0" prefHeight="17.0" prefWidth="71.0" text="Utilizador" textFill="#fdf0f0">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="81.0" layoutY="181.0" prefHeight="20.0" prefWidth="45.0" text="Senha" textFill="#e4dcdc">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblMensagem" alignment="CENTER" contentDisplay="CENTER" layoutX="91.0" layoutY="270.0" prefHeight="42.0" prefWidth="297.0" styleClass="label-Mensegem" />
+                  <Label layoutX="151.0" layoutY="324.0" prefHeight="21.0" prefWidth="150.0" text="Deseja Criar uma conta?" textFill="#e61111">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="174.0" layoutY="357.0" onMouseClicked="#onClickIrParaCadastro" prefHeight="21.0" prefWidth="104.0" text="Iniciar sessão" textFill="#ef1e1e">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </AnchorPane>
+         </children>
+      </StackPane>
+      <Button fx:id="close" layoutX="638.0" layoutY="13.0" mnemonicParsing="false" onAction="#exit" prefHeight="26.0" prefWidth="45.0" styleClass="close" stylesheets="@designLogin.css" AnchorPane.rightAnchor="7.666666666666629" AnchorPane.topAnchor="13.0">
+         <graphic>
+            <FontIcon iconColor="#dbd4d4" iconLiteral="fa-close" iconSize="18" />
+         </graphic></Button>
+      <Button fx:id="minimize" layoutX="589.0" layoutY="13.0" mnemonicParsing="false" onAction="#OnActionMinimize" prefHeight="26.0" prefWidth="45.0" styleClass="minimize" AnchorPane.rightAnchor="56.66666666666663" />
+      <FontIcon iconColor="#e9e4e4" iconLiteral="fa-window-minimize" iconSize="18" layoutX="598.0" layoutY="32.0" selectionFill="#d9cbcb" wrappingWidth="26.809484243392944" AnchorPane.rightAnchor="66.19051575660706" />
+   </children>
+</AnchorPane>

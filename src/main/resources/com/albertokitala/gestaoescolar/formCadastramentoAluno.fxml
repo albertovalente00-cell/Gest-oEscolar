@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="576.0" prefWidth="1150.0" style="-fx-background-color: #f0f3f8;" styleClass="fundo-geral" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.albertokitala.gestaoescolar.controller.ControllerMenuPrincipal">
+   <bottom>
+      <VBox prefHeight="594.0" prefWidth="1150.0" spacing="8.0" BorderPane.alignment="CENTER">
+         <children>
+            <ScrollPane fitToHeight="true" fitToWidth="true" prefHeight="530.0" prefWidth="1130.0" style="-fx-background-color: #f0f3f8; -fx-background: #f0f3f8; -fx-border-color: transparent;">
+               <content>
+                  <HBox prefHeight="593.0" prefWidth="1122.0" spacing="10.0" style="-fx-background-color: #f0f3f8;">
+                     <children>
+                        <VBox maxHeight="1.7976931348623157E308" prefHeight="558.0" prefWidth="877.0" spacing="12.0" style="-fx-background-color: #F5F7FB;" HBox.hgrow="NEVER">
+                           <children>
+                              <VBox prefHeight="99.0" prefWidth="883.0" spacing="15.0" style="-fx-background-color: White; -fx-background-radius: 15; -fx-padding: 25; -fx-border-color: #e2e8f0; -fx-border-radius: 12;">
+                                 <children>
+                                    <Label prefHeight="27.0" prefWidth="452.0" style="-fx-font-size: 18px; -fx-font-weight: bold;" text="Cadastrar Novo Aluno - Informações do Aluno">
+                                       <font>
+                                          <Font name="System Bold" size="17.0" />
+                                       </font></Label>
+                                    <Label prefHeight="32.0" prefWidth="408.0" style="-fx-text-fill: #6B7280;" text="Preencha os dados do aluno para realizar o cadastro no sistema">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font></Label>
+                                 </children>
+                              </VBox>
+                              <HBox prefHeight="49.0" prefWidth="903.0" spacing="20.0">
+                                 <children>
+                                    <VBox prefHeight="85.0" prefWidth="751.0" spacing="10.0" HBox.hgrow="ALWAYS">
+                                       <children>
+                                          <HBox prefHeight="43.0" prefWidth="700.0" spacing="15.0">
+                                             <children>
+                                                <VBox prefHeight="200.0" prefWidth="300.0" HBox.hgrow="ALWAYS">
+                                                   <children>
+                                                      <Label prefHeight="17.0" prefWidth="137.0" style="-fx-font-weight: bold; -fx-font-size: 12px;" text="Nome Completo" />
+                                                      <TextField fx:id="txNomeCompletoAluno" maxWidth="1.7976931348623157E308" prefHeight="25.0" promptText="Digite nome Completo" />
+                                                   </children>
+                                                </VBox>
+                                                <VBox prefHeight="200.0" prefWidth="300.0" HBox.hgrow="ALWAYS">
+                                                   <children>
+                                                      <Label style="-fx-font-weight: bold; -fx-font-size: 12px;" text="Data da Nascimento" />
+                                                      <DatePicker fx:id="DtPickDataNascimento" prefHeight="25.0" prefWidth="279.0" promptText="Digite a data de nascimento" />
+                                                   </children>
+                                                </VBox>
+                                             </children>
+                                          </HBox>
+                                       </children>
+                                    </VBox>
+                                    <VBox prefHeight="49.0" prefWidth="131.0" spacing="10.0" />
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="97.0" prefWidth="803.0" spacing="20.0">
+                                 <children>
+                                    <VBox prefHeight="20.0" prefWidth="0.0" spacing="10.0" HBox.hgrow="ALWAYS">
+                                       <children>
+                                          <HBox prefHeight="43.0" prefWidth="700.0" spacing="15.0">
+                                             <children>
+                                                <VBox prefHeight="200.0" prefWidth="300.0" HBox.hgrow="ALWAYS">
+                                                   <children>
+                                                      <Label prefHeight="17.0" prefWidth="228.0" style="-fx-font-weight: bold; -fx-font-size: 12px;" text="Nº B.I" />
+                                                      <TextField fx:id="txtBilheteIdentdade" maxWidth="1.7976931348623157E308" prefHeight="25.0" prefWidth="341.0" promptText="Digite o nº do B.I" />
+                                                   </children>
+                                                </VBox>
+                                                <VBox prefHeight="200.0" prefWidth="300.0" HBox.hgrow="ALWAYS">
+                                                   <children>
+                                                      <Label prefHeight="17.0" prefWidth="127.0" style="-fx-font-weight: bold; -fx-font-size: 12px;" text="Turma do Aluno" />
+                                                      <ComboBox fx:id="comboxGeneroAluno1" prefHeight="25.0" prefWidth="247.0" promptText="Selecione a turma " />
+                                                   </children>
+                                                </VBox>
+                                             </children>
+                                          </HBox>
+                                          <HBox layoutX="10.0" layoutY="10.0" prefHeight="43.0" prefWidth="700.0" spacing="15.0">
+                                             <children>
+                                                <VBox prefHeight="200.0" prefWidth="300.0" HBox.hgrow="ALWAYS">
+                                                   <children>
+                                                      <Label prefHeight="17.0" prefWidth="137.0" style="-fx-font-weight: bold; -fx-font-size: 12px;" text="Email do Aluno" />
+                                                      <TextField fx:id="txtEmailAluno" maxWidth="1.7976931348623157E308" prefHeight="25.0" prefWidth="243.0" promptText="Digite o email do aluno" />
+                                                   </children>
+                                                </VBox>
+                                                <VBox prefHeight="200.0" prefWidth="300.0" HBox.hgrow="ALWAYS">
+                                                   <children>
+                                                      <Label prefHeight="17.0" prefWidth="127.0" style="-fx-font-weight: bold; -fx-font-size: 12px;" text="Telefone do Aluno" />
+                                                      <TextField fx:id="txtTelefoneAluno" promptText="Telefone do Aluno" />
+                                                   </children>
+                                                </VBox>
+                                             </children>
+                                          </HBox>
+                                       </children>
+                                    </VBox>
+                                    <VBox prefHeight="101.0" prefWidth="129.0" spacing="10.0" />
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="69.0" prefWidth="803.0" spacing="20.0">
+                                 <children>
+                                    <VBox prefHeight="168.0" prefWidth="635.0" spacing="15.0" HBox.hgrow="ALWAYS">
+                                       <children>
+                                          <HBox prefHeight="43.0" prefWidth="277.0" spacing="15.0">
+                                             <children>
+                                                <VBox prefHeight="200.0" prefWidth="300.0" HBox.hgrow="ALWAYS">
+                                                   <children>
+                                                      <Label prefHeight="17.0" prefWidth="137.0" style="-fx-font-weight: bold; -fx-font-size: 12px;" text="Genero do Aluno" />
+                                                      <ComboBox fx:id="comboxGeneroAluno" prefHeight="25.0" prefWidth="247.0" promptText="Selecione o genero do Aluno" />
+                                                   </children>
+                                                </VBox>
+                                                <VBox prefHeight="200.0" prefWidth="300.0" HBox.hgrow="ALWAYS">
+                                                   <children>
+                                                      <Label prefHeight="17.0" prefWidth="157.0" style="-fx-font-weight: bold; -fx-font-size: 12px;" text="Endereço do Aluno" />
+                                                      <TextField fx:id="txtNomeEncarregado" promptText="Digite o nome do Encarregado" text="Digite o Endereço do Aluno" />
+                                                   </children>
+                                                </VBox>
+                                             </children>
+                                          </HBox>
+                                          <HBox prefHeight="43.0" prefWidth="277.0" spacing="15.0">
+                                             <children>
+                                                <VBox prefHeight="200.0" prefWidth="300.0" HBox.hgrow="ALWAYS">
+                                                   <children>
+                                                      <Label prefHeight="17.0" prefWidth="199.0" style="-fx-font-weight: bold; -fx-font-size: 12px;" text="Encarregado de Educação(Pai)" />
+                                                      <TextField fx:id="txtNomeCarregadoPai" maxWidth="1.7976931348623157E308" prefHeight="25.0" promptText="Digite o nome do encarregado de Educação" />
+                                                   </children>
+                                                </VBox>
+                                                <VBox prefHeight="200.0" prefWidth="300.0" HBox.hgrow="ALWAYS">
+                                                   <children>
+                                                      <Label prefHeight="17.0" prefWidth="204.0" style="-fx-font-weight: bold; -fx-font-size: 12px;" text="Telefone do Encarregado(Pai)" />
+                                                      <TextField fx:id="txtTelefonePai" promptText="Digite o telefone do Encarregado" />
+                                                   </children>
+                                                </VBox>
+                                             </children>
+                                          </HBox>
+                                          <HBox prefHeight="43.0" prefWidth="277.0" spacing="15.0">
+                                             <children>
+                                                <VBox prefHeight="200.0" prefWidth="300.0" HBox.hgrow="ALWAYS">
+                                                   <children>
+                                                      <Label prefHeight="17.0" prefWidth="199.0" style="-fx-font-weight: bold; -fx-font-size: 12px;" text="Encarregado de Educação(Mãe)" />
+                                                      <TextField fx:id="txtEncarrgadoMae" maxWidth="1.7976931348623157E308" prefHeight="25.0" promptText="Digite o nome do encarregado de Educação" />
+                                                   </children>
+                                                </VBox>
+                                                <VBox prefHeight="200.0" prefWidth="300.0" HBox.hgrow="ALWAYS">
+                                                   <children>
+                                                      <Label prefHeight="17.0" prefWidth="204.0" style="-fx-font-weight: bold; -fx-font-size: 12px;" text="Telefone do Encarregado(Mãe)" />
+                                                      <TextField fx:id="txtTelefoneMae" promptText="Digite o telefone do ecarregado de educação" />
+                                                   </children>
+                                                </VBox>
+                                             </children>
+                                          </HBox>
+                                       </children>
+                                    </VBox>
+                                    <VBox prefHeight="43.0" prefWidth="134.0" spacing="10.0" />
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER" prefHeight="57.0" prefWidth="877.0" spacing="15.0">
+                                 <children>
+                                    <Button fx:id="btnCancelar" mnemonicParsing="false" onAction="#OnActionCancelar" prefHeight="25.0" prefWidth="86.0" style="-fx-background-color: white; -fx-border-color: #CCCCCC;; -fx-border-radius: 8; -fx-background-radius: 8; -fx-pref-width: 120; -fx-pref-height: 40;" text="Cancelar" />
+                                    <Button fx:id="btnCadastrar" mnemonicParsing="false" onAction="#OnActionCadastrar" prefHeight="25.0" prefWidth="86.0" style="-fx-background-color: #0d4a6d; -fx-text-fill: white; -fx-background-radius: 8; -fx-pref-width: 120; -fx-pref-height: 40; -fx-font-weight: bold;" text="Cadastrar" />
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="30.0" />
+                                 </padding>
+                              </HBox>
+                           </children>
+                        </VBox>
+                        <VBox alignment="CENTER" prefHeight="427.0" prefWidth="203.0" spacing="15.0" style="-fx-border-color: black; -fx-border-width: 3; -fx-border-radius: 30; -fx-background-radius: 25; -fx-background-color: white;">
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                           <HBox.margin>
+                              <Insets bottom="60.0" right="20.0" top="230.0" />
+                           </HBox.margin>
+                           <children>
+                              <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="33.0" prefWidth="144.0" text="Foto do Aluno">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                              <ImageView fx:id="imgFoto" fitHeight="172.0" fitWidth="180.0" pickOnBounds="true">
+                                 <image>
+                                    <Image url="@imagem/foto.png" />
+                                 </image>
+                              </ImageView>
+                              <Button fx:id="btEscolhaFoto" mnemonicParsing="false" onAction="#OnActionEscolhaFoto" prefHeight="25.0" prefWidth="128.0" style="-fx-background-color: #1d4d7a; -fx-text-fill: white; -fx-background-radius: 8; -fx-padding: 8 20 8 20; -fx-font-weight: bold; -fx-cursor: hand;" text="Escolha  Foto">
+                                 <VBox.margin>
+                                    <Insets top="10.0" />
+                                 </VBox.margin>
+                              </Button>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+               </content>
+            </ScrollPane>
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+      </VBox>
+   </bottom>
+</BorderPane>
